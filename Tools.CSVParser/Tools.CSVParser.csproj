@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>chkam05.Tools.CSVParser</RootNamespace>
+    <PackageId>chkam05.Tools.CSVParser</PackageId>
+    <Authors>Kamil Karpiński</Authors>
+    <PackageLicenseExpression></PackageLicenseExpression>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <Description>CSV files parser for .NET projects</Description>
+    <Copyright>2020</Copyright>
+    <PackageTags>CSV Parser</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>

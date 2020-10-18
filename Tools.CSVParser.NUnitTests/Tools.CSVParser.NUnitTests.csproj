@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <IsPackable>false</IsPackable>
+		<PackageId>chkam05.Tools.CSVParser.NUnitTests</PackageId>
+		<Authors>Kamil Karpiński</Authors>
+		<Description>Unit test for Tools.CSVParser library</Description>
+		<Copyright>2020</Copyright>
+		<PackageLicenseFile>LICENSE</PackageLicenseFile>
+		<PackageTags>CSV Parser Unit Tests</PackageTags>
+    </PropertyGroup>
+
+    <ItemGroup>
+		<PackageReference Include="nunit" Version="3.12.0" />
+		<PackageReference Include="NUnit3TestAdapter" Version="3.15.1" />
+		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.4.0" />
+    </ItemGroup>
+
+	<ItemGroup>
+		<None Include="..\LICENSE">
+			<Pack>True</Pack>
+			<PackagePath></PackagePath>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+        <None Update="Resources\*">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Tools.CSVParser\Tools.CSVParser.csproj" />
+	</ItemGroup>
+
+</Project>
